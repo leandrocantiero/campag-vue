@@ -12,42 +12,39 @@ import image from "@/assets/img/software-1.jpg";
         <div class="col-lg-6">
           <div class="row justify-content-start">
             <DefaultInfoCard
-              color="info"
-              icon="public"
-              title="Integração"
-              description="We get insulted by others, lose trust for those We get back
-                  freezes"
+              icon="content_copy"
+              title="Conversão"
+              description="Já tem um sistema implantado e precisa de uma conversão? Sem problemas! Nossa equipe converte qualquer base de dados em até 90 dias."
             />
+
             <DefaultInfoCard
-              color="info"
-              icon="payments"
-              title="Desempenho"
-              description="We get insulted by others, lose trust for those We get back
-                  freezes"
+              icon="flip_to_front"
+              title="Integração"
+              description="Conte com nossos sistemas integrados para manter sua empresa alinhada e informatizada."
             />
           </div>
+
           <div class="row justify-content-start mt-4">
             <DefaultInfoCard
-              color="info"
-              icon="apps"
-              title="Atendimento"
-              description="We get insulted by others, lose trust for those We get back
-                  freezes"
+              class="mt-3"
+              icon="price_change"
+              title="Economize tempo & dinheiro"
+              description="Bons sistemas resolvem problemas e melhoram processos do dia a dia, salve seu tempo e dinheiro com nossas soluções."
             />
+
             <DefaultInfoCard
-              color="info"
-              icon="3p"
-              title="Confiabilidade"
-              description="We get insulted by others, lose trust for those We get back
-                  freezes"
+              class="mt-3"
+              icon="devices"
+              title="Atendimento"
+              description="Conte com nossa equipe de atendentes receber suporte, seja por Skype, Whatsapp ou telefone, estaremos lá por você."
             />
           </div>
         </div>
         <div class="col-lg-4 ms-auto mt-lg-0 mt-6">
           <CenteredBlogCard
             :image="image"
-            title="Confira nosso portifólio"
-            description="Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards."
+            title="Confira nossos produtos"
+            description="Da contabilidade à administração de pessoal, temos todos os sistemas que você precisa!"
           />
         </div>
       </div>

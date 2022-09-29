@@ -9,6 +9,8 @@ import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 
 //Vue Material Kit 2 components
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
+import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
+import "vue3-carousel/dist/carousel.css";
 
 // sections
 import PresentationCounter from "./Sections/PresentationCounter.vue";
@@ -21,7 +23,10 @@ import PresentationInformation from "./Sections/PresentationInformation.vue";
 
 //images
 import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
-import image from "@/assets/img/newyork-1.jpg";
+import newyork from "@/assets/img/newyork-1.jpg";
+import nastuh from "@/assets/img/nastuh.jpg";
+import dg1 from "@/assets/img/dg1.jpg";
+
 import wavesWhite from "@/assets/img/waves-white.svg";
 import logoBootstrap from "@/assets/img/logos/bootstrap5.jpg";
 import logoTailwind from "@/assets/img/logos/icon-tailwind.jpg";
@@ -32,6 +37,19 @@ import logoSketch from "@/assets/img/logos/sketch.jpg";
 
 //hooks
 const body = document.getElementsByTagName("body")[0];
+
+const images = [newyork, nastuh, dg1];
+const titles = [
+  "Bem-vindo a Campag Informática",
+  "SCPI - Sistema de Contabilidade Pública Integrado",
+  "SIP - Sistema Integrado de Pessoal",
+];
+const subtitles = [
+  "Descubra a empresa que está no mercado a mais de 25 anos fornecendo o melhor serviço para seus clientes.",
+  "Só quem é líder pode oferecer tantas vantagens em um único sistema. Conheça os módulos do nosso sistema de contabilidade pública.",
+  "Um software completo para o gerenciamento da Folha de Pagamentos e do setor de RH.",
+];
+
 onMounted(() => {
   body.classList.add("presentation-page");
   body.classList.add("bg-gray-200");
@@ -52,9 +70,36 @@ onUnmounted(() => {
   </div>
 
   <header class="bg-gradient-dark">
-    <div
+    <Carousel :autoplay="4500">
+      <Slide v-for="(image, index) in images" :key="image">
+        <div
+          class="carousel__item page-header min-vh-75"
+          :style="{
+            backgroundImage: `url(${image})`,
+            width: '100%',
+          }"
+        >
+          <span class="mask bg-gradient-dark opacity-6"></span>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center mx-auto my-auto">
+                <h1 class="text-white">
+                  {{ titles[index] }}
+                </h1>
+                <p class="lead mb-4 text-white opacity-8">
+                  {{ subtitles[index] }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Slide>
+    </Carousel>
+
+    <!-- <div
       class="page-header min-vh-75"
-      :style="{ backgroundImage: `url(${image})` }"
+       }"
     >
       <span class="mask bg-gradient-dark opacity-6"></span>
       <div class="container">
@@ -67,7 +112,7 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </header>
 
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
@@ -98,10 +143,8 @@ onUnmounted(() => {
                   Precisa informatizar seu negócio com sistemas de ponta?
                 </h3>
                 <p class="text-white text-md">
-                  Cause if you do, it can be yours for FREE. Hit the button
-                  below to navigate to Creative Tim where you can <br />
-                  find the Design System in HTML. Start a new project or give an
-                  old Bootstrap project a new look!
+                  Fornecemos os melhores sistemas disponíveis no mercado. <br />
+                  Tudo para que sua empresa obtenha o melhor desempenho e e transforme isso em uma vantagem competitiva.
                 </p>
 
                 <RouterLink

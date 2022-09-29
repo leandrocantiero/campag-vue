@@ -12,9 +12,8 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
               <DefaultCounterCard
                 color="primary"
                 title="Sistemas"
-                description="From buttons, to inputs, navbars, alerts or cards, you are
-                  covered"
-                :count="70"
+                description="Da contabilidade à administração de pessoal, temos todos os sistemas que você precisa!"
+                :count="20"
                 suffix="+"
                 :duration="3000"
                 divider="vertical"
@@ -24,9 +23,9 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
               <DefaultCounterCard
                 color="primary"
                 title="Clientes"
-                description="Mix the sections, change the colors and unleash your
-                  creativity"
-                :count="15"
+                description="Nossa gama de clientes inclui prefeituras, câmaras e empresas privadas"
+                :count="100"
+                suffix="+"
                 :duration="3000"
                 divider="vertical"
               />
@@ -35,9 +34,8 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
               <DefaultCounterCard
                 color="primary"
                 title="Anos de mercado"
-                description="Save 3-4 weeks of work when you use our pre-made pages for
-                  your website"
-                :count="20"
+                description="Venha fazer parte dessa história de sucesso!"
+                :count="25"
                 suffix="+"
                 :duration="3000"
               />

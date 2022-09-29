@@ -58,13 +58,13 @@ export default {
 
             <h2 class="text-dark mb-0">Veja nosso portifólio de sistemas</h2>
             <p class="lead">
-              We have created multiple options for you to put together and
-              customise into pixel perfect pages.
+              Confira abaixo nossos parceiros e sistemas!
             </p>
           </div>
         </div>
       </div>
     </div>
+
     <div class="container mt-sm-5 mt-3">
       <div
         v-for="({ heading, description, items }, index) in data"
@@ -90,7 +90,7 @@ export default {
               :key="title"
             >
               <ExampleCard
-                class="min-height-160 shadow-lg mt-4"
+                class="min-height-160 max-height-250 shadow-lg mt-4"
                 :image="image"
                 :title="title"
                 :subtitle="subtitle"

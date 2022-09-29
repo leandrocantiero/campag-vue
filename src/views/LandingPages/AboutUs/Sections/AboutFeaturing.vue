@@ -5,78 +5,65 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
 <template>
   <section class="pt-4 pb-6" id="count-stats">
     <div class="container">
-      <div class="row mb-7">
+      <div class="row mb-7 align-items-center justify-content-between">
         <div class="col-lg-2 col-md-4 col-6 mb-4">
           <img
             class="w-100 opacity-7"
-            src="@/assets/img/logos/gray-logos/logo-coinbase.svg"
+            style="max-width: 250px"
+            src="@/assets/img/logos/logo-fiorilli.png"
             alt="logo"
           />
         </div>
+
         <div class="col-lg-2 col-md-4 col-6 mb-4">
           <img
             class="w-100 opacity-7"
-            src="@/assets/img/logos/gray-logos/logo-nasa.svg"
+            style="max-width: 130px"
+            src="@/assets/img/logos/logo-senior.png"
             alt="logo"
           />
         </div>
+        
         <div class="col-lg-2 col-md-4 col-6 mb-4">
           <img
             class="w-100 opacity-7"
-            src="@/assets/img/logos/gray-logos/logo-netflix.svg"
-            alt="logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 mb-4">
-          <img
-            class="w-100 opacity-7"
-            src="@/assets/img/logos/gray-logos/logo-pinterest.svg"
-            alt="logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 mb-4">
-          <img
-            class="w-100 opacity-7"
-            src="@/assets/img/logos/gray-logos/logo-spotify.svg"
-            alt="logo"
-          />
-        </div>
-        <div class="col-lg-2 col-md-4 col-6 mb-4">
-          <img
-            class="w-100 opacity-7"
-            src="@/assets/img/logos/gray-logos/logo-vodafone.svg"
+            style="max-width: 130px"
+            src="@/assets/img/logos/logo-wk.png"
             alt="logo"
           />
         </div>
       </div>
       <div class="row justify-content-center text-center">
-        <div class="col-md-3">
+        <div class="col-md-4 position-relative">
           <DefaultCounterCard
+            color="primary"
             title="Sistemas"
-            description="Of “high-performing” level are led by a certified project manager"
-            :count="5234"
-            color="primary"
-            :duration="3000"
-          />
-        </div>
-        <div class="col-md-3">
-          <DefaultCounterCard
-            title="Clientes"
-            description="That meets quality standards required by our users"
-            :count="3400"
-            color="primary"
+            description="Da contabilidade à administração de pessoal, temos todos os sistemas que você precisa!"
+            :count="20"
             suffix="+"
             :duration="3000"
+            divider="vertical"
           />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 position-relative">
           <DefaultCounterCard
-            title="Suporte"
-            description="Actively engage team members that finishes on time"
-            :count="24"
             color="primary"
-            suffix="/7"
-            :duration="4000"
+            title="Clientes"
+            description="Nossa gama de clientes inclui prefeituras, câmaras e empresas privadas"
+            :count="100"
+            suffix="+"
+            :duration="3000"
+            divider="vertical"
+          />
+        </div>
+        <div class="col-md-4">
+          <DefaultCounterCard
+            color="primary"
+            title="Anos de mercado"
+            description="Venha fazer parte dessa história de sucesso!"
+            :count="25"
+            suffix="+"
+            :duration="3000"
           />
         </div>
       </div>

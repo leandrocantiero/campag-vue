@@ -63,7 +63,7 @@ defineProps({
             name: "Contato",
             href: "https://www.creative-tim.com/templates/premium",
           },
-          { name: "Portifólio", href: "https://www.creative-tim.com/blog" },
+          { name: "Produtos", href: "https://www.creative-tim.com/blog" },
         ],
       },
       {

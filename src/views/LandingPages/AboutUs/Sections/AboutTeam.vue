@@ -14,9 +14,7 @@ import marquez from "@/assets/img/ivana-square.jpg";
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-start mb-5 mt-5">
-          <h3 class="text-white z-index-1 position-relative">
-            Nossa equipe
-          </h3>
+          <h3 class="text-white z-index-1 position-relative">Nossa equipe</h3>
           <p class="text-white opacity-8 mb-0">
             Confira os membros da nossa equipe.
           </p>
@@ -26,9 +24,15 @@ import marquez from "@/assets/img/ivana-square.jpg";
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-4"
-            :image="emma"
-            :profile="{ name: 'Emma Roberts', link: 'javascript:;' }"
-            :position="{ label: 'UI Designer', color: 'primary' }"
+            :image="william"
+            :profile="{
+              name: 'Claudivelto F. Campagnolo',
+              link: 'javascript:;',
+            }"
+            :position="{
+              label: 'Atendente de folha de pagamento',
+              color: 'primary',
+            }"
             description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art."
           />
@@ -37,20 +41,24 @@ import marquez from "@/assets/img/ivana-square.jpg";
           <HorizontalTeamCard
             class="mt-lg-4 mt-5"
             :image="william"
-            :profile="{ name: 'William Pearce', link: 'javascript:;' }"
-            :position="{ label: 'Boss', color: 'primary' }"
+            :profile="{ name: 'Cedivaldo Sgrignolli', link: 'javascript:;' }"
+            :position="{
+              label: 'Sócio | Atendente de contabilidade',
+              color: 'primary',
+            }"
             description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art."
           />
         </div>
       </div>
+
       <div class="row mt-4">
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-4 z-index-2"
-            :image="ivana"
-            :profile="{ name: 'Ivana Flow', link: 'javascript:;' }"
-            :position="{ label: 'Athlete', color: 'primary' }"
+            :image="marquez"
+            :profile="{ name: 'Valter Campagnolo', link: 'javascript:;' }"
+            :position="{ label: 'Sócio | CEO', color: 'primary' }"
             description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art."
           />
@@ -58,9 +66,25 @@ import marquez from "@/assets/img/ivana-square.jpg";
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-lg-4 mt-5 z-index-2"
+            :image="emma"
+            :profile="{ name: 'Giovana Sgrignolli', link: 'javascript:;' }"
+            :position="{
+              label: 'Atendente de contabilidade',
+              color: 'primary',
+            }"
+            description="Artist is a term applied to a person who engages in an
+                    activity deemed to be an art."
+          />
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-6 col-12">
+          <HorizontalTeamCard
+            class="mt-4 z-index-2"
             :image="marquez"
-            :profile="{ name: 'Marquez Garcia', link: 'javascript:;' }"
-            :position="{ label: 'JS Developer', color: 'primary' }"
+            :profile="{ name: 'Thales Roberto', link: 'javascript:;' }"
+            :position="{ label: 'Atendente de arrecadação', color: 'primary' }"
             description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art."
           />

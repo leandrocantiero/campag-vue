@@ -16,297 +16,84 @@ Coded by www.creative-tim.com
 const imagesPrefix =
   "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections";
 
-import imgPricing from "@/assets/img/pricing.png";
-import imgFeatures from "@/assets/img/features.png";
-import imgBlogPosts from "@/assets/img/blog-posts.png";
-import imgTestimonials from "@/assets/img/testimonials.png";
-import imgTeam from "@/assets/img/team.png";
-import imgStat from "@/assets/img/stat.png";
-import imgContent from "@/assets/img/content.png";
-import imgPagination from "@/assets/img/pagination.png";
-import imgAlert from "@/assets/img/alerts.jpg";
-import imgPopover from "@/assets/img/popovers.jpg";
-import imgModal from "@/assets/img/modals.jpg";
-import imgDropdowns from "@/assets/img/dropdowns.jpg";
+import fiorilliScpi from '@/assets/img/fiorilli-scpi.png'
+import fiorilliSip from '@/assets/img/fiorilli-sip.png'
+import fiorilliSia from '@/assets/img/fiorilli-sia.png'
+import fiorilliSas from '@/assets/img/fiorilli-sas.png'
+import fiorilliSie from '@/assets/img/fiorilli-sie.png'
+import fiorilliSis from '@/assets/img/fiorilli-sis.png'
+import fiorilliSse from '@/assets/img/fiorilli-sse.png'
+import fiorilliSolucoes from '@/assets/img/fiorilli-solucoes.png'
+
+import seniorFolha from '@/assets/img/senior-folha.png'
 
 export default [
   {
-    heading: "Recursos humanos",
+    heading: "Fiorilli Software",
     description:
-      "A selection of 45 page sections that fit perfectly in any combination",
+      "Atuando desde 1974, com transparência e eficiência, a Fiorilli desenvolve soluções corporativas voltadas à Administração Pública. Tendo sempre como principal objetivo garantir a satisfação de seus clientes, a empresa produz softwares que atendem às necessidades das entidades públicas de todos os estados brasileiros. Além disso, o conhecimento dos nossos profissionais faz a diferença nos processos e garante a atualização constante dos nossos produtos.",
     items: [
       {
-        image: `${imagesPrefix}/headers.jpg`,
-        title: "Page Headers",
-        subtitle: "10 Examples",
+        image: fiorilliScpi,
+        title: "SCPI - Sistema de Contabilidade Pública Integrado",
         route: "page-headers",
         pro: false
       },
       {
-        image: imgFeatures,
-        title: "Features",
-        subtitle: "14 Examples",
+        image: fiorilliSip,
+        title: "SIP - Sistema Integrado de Pessoal",
         route: "page-features",
         pro: false
       },
       {
-        image: imgPricing,
-        title: "Pricing",
-        subtitle: "8 Examples",
+        image: fiorilliSia,
+        title: "SIA - Sistema Integrado de Arrecadação",
         route: "presentation",
-        pro: true
+        pro: false
       },
       {
-        image: `${imagesPrefix}/faq.jpg`,
-        title: "FAQ",
-        subtitle: "1 Example",
+        image: fiorilliSas,
+        title: "SAS - Sistema de Assistência Social",
         route: "presentation",
-        pro: true
+        pro: false
       },
       {
-        image: imgBlogPosts,
-        title: "Blog Posts",
-        subtitle: "11 Examples",
+        image: fiorilliSie,
+        title: "SIE - Sistema Integrado de Ensino",
         route: "presentation",
-        pro: true
+        pro: false
       },
       {
-        image: imgTestimonials,
-        title: "Testimonials",
-        subtitle: "11 Examples",
+        image: fiorilliSis,
+        title: "SIS - Sistema Integrado de Saúde",
         route: "presentation",
-        pro: true
+        pro: false
       },
       {
-        image: imgTeam,
-        title: "Teams",
-        subtitle: "6 Examples",
+        image: fiorilliSse,
+        title: "SSE - Sistema de Secretaria",
         route: "presentation",
-        pro: true
+        pro: false
       },
       {
-        image: imgStat,
-        title: "Stats",
-        subtitle: "3 Examples",
+        image: fiorilliSolucoes,
+        title: "Soluções Fiorilli - Sistemas para Biblioteca, Controle Interno e Ouvidoria",
         route: "presentation",
-        pro: true
+        pro: false
       },
-      {
-        image: `${imagesPrefix}/call-to-action.jpg`,
-        title: "Call to Actions",
-        subtitle: "8 Examples",
-        route: "presentation",
-        pro: true
-      },
-      {
-        image: `${imagesPrefix}/projects.jpg`,
-        title: "Applications",
-        subtitle: "6 Examples",
-        route: "presentation",
-        pro: true
-      },
-      {
-        image: `${imagesPrefix}/logo-area.jpg`,
-        title: "Logo Areas",
-        subtitle: "4 Examples",
-        route: "presentation",
-        pro: true
-      },
-      {
-        image: `${imagesPrefix}/footers.jpg`,
-        title: "Footers",
-        subtitle: "10 Examples",
-        route: "presentation",
-        pro: true
-      },
-      {
-        image: `${imagesPrefix}/general-cards.jpg`,
-        title: "General Cards",
-        subtitle: "9 Examples",
-        route: "presentation",
-        pro: true
-      },
-      {
-        image: imgContent,
-        title: "Content Sections",
-        subtitle: "8 Examples",
-        route: "presentation",
-        pro: true
-      }
     ]
   },
   {
-    heading: "Contabilidade",
-    description: "30+ components that will help go through the pages",
-    items: [
-      {
-        image: `${imagesPrefix}/navbars.jpg`,
-        title: "Navbars",
-        subtitle: "4 Examples",
-        route: "navigation-navbars",
-        pro: false
-      },
-      {
-        image: `${imagesPrefix}/nav-tabs.jpg`,
-        title: "Nav Tabs",
-        subtitle: "2 Nav Tabs",
-        route: "navigation-navtabs",
-        pro: false
-      },
-      {
-        image: imgPagination,
-        title: "Pagination",
-        subtitle: "3 Examples",
-        route: "navigation-pagination",
-        pro: false
-      }
-    ]
-  },
-  {
-    heading: "Gestão e Inventário",
+    heading: "Senior Sistemas",
     description:
-      "50+ elements that you need for text manipulation and insertion",
+      "Presente em todo território brasileiro e na América Latina, é referência em tecnologia para gestão, a companhia tem um dos mais completos portfolios para alta performance, oferecendo soluções em Gestão Empresarial, Logística, Gestão de Pessoas, Relacionamento com Clientes, Supermercados e Gestão de Acesso e Segurança. Descubra mais sobre a história e sucessos da Senior.",
     items: [
       {
-        image: `${imagesPrefix}/newsletters.jpg`,
-        title: "Newsletters",
-        subtitle: "6 Examples",
+        image: seniorFolha,
+        title: "Folha de Pagamento",
         route: "presentation",
-        pro: true
-      },
-      {
-        image: `${imagesPrefix}/contact-sections.jpg`,
-        title: "Contact Sections",
-        subtitle: "8 Examples",
-        route: "presentation",
-        pro: true
-      },
-      {
-        image: `${imagesPrefix}/forms.jpg`,
-        title: "Forms",
-        subtitle: "3 Examples",
-        route: "inputareas-forms",
         pro: false
       },
-      {
-        image: `${imagesPrefix}/inputs.jpg`,
-        title: "Inputs",
-        subtitle: "6 Examples",
-        route: "inputareas-inputs",
-        pro: false
-      }
-    ]
-  },
-  {
-    heading: "Compras e Licitações",
-    description:
-      "20+ Fully coded components that popup from different places of the screen",
-    items: [
-      {
-        image: imgAlert,
-        title: "Alerts",
-        subtitle: "4 Examples",
-        route: "ac-alerts",
-        pro: false
-      },
-      {
-        image: `${imagesPrefix}/toasts.jpg`,
-        title: "Notifications",
-        subtitle: "3 Examples",
-        route: "presentation",
-        pro: true
-      },
-      {
-        image: imgPopover,
-        title: "Tooltips & Popovers",
-        subtitle: "2 Examples",
-        route: "ac-tooltips-popovers",
-        pro: false
-      },
-      {
-        image: imgModal,
-        title: "Modals",
-        subtitle: "5 Examples",
-        route: "ac-modals",
-        pro: false
-      }
-    ]
-  },
-  {
-    heading: "Finaneiro e NFe",
-    description:
-      "80+ carefully crafted small elements that come with multiple colors and shapes",
-    items: [
-      {
-        image: `${imagesPrefix}/buttons.jpg`,
-        title: "Buttons",
-        subtitle: "6 Examples",
-        route: "el-buttons",
-        pro: false
-      },
-      {
-        image: `${imagesPrefix}/avatars.jpg`,
-        title: "Avatars",
-        subtitle: "2 Examples",
-        route: "el-avatars",
-        pro: false
-      },
-      {
-        image: imgDropdowns,
-        title: "Dropdowns",
-        subtitle: "2 Examples",
-        route: "el-dropdowns",
-        pro: false
-      },
-      {
-        image: `${imagesPrefix}/switch.jpg`,
-        title: "Toggles",
-        subtitle: "2 Examples",
-        route: "el-toggles",
-        pro: false
-      },
-      {
-        image: `${imagesPrefix}/social-buttons.jpg`,
-        title: "Social Buttons",
-        subtitle: "2 Examples",
-        route: "presentation",
-        pro: true
-      },
-      {
-        image: `${imagesPrefix}/breadcrumbs.jpg`,
-        title: "Breadcrumbs",
-        subtitle: "1 Example",
-        route: "el-breadcrumbs",
-        pro: false
-      },
-      {
-        image: `${imagesPrefix}/badges.jpg`,
-        title: "Badges",
-        subtitle: "3 Examples",
-        route: "el-badges",
-        pro: false
-      },
-      {
-        image: `${imagesPrefix}/progress.jpg`,
-        title: "Progress Bars",
-        subtitle: "4 Examples",
-        route: "el-progress-bars",
-        pro: false
-      },
-      {
-        image: `${imagesPrefix}/tables.jpg`,
-        title: "Tables",
-        subtitle: "3 Examples",
-        route: "presentation",
-        pro: true
-      },
-      {
-        image: `${imagesPrefix}/typography.jpg`,
-        title: "Typography",
-        subtitle: "2 Examples",
-        route: "el-typography",
-        pro: false
-      }
     ]
   }
 ];

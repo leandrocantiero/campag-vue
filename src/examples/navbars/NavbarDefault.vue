@@ -8,6 +8,8 @@ import ArrDark from "@/assets/img/down-arrow-dark.svg";
 import downArrow from "@/assets/img/down-arrow.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
 
+import campagIcon from "@/assets/img/campag-icon.png";
+
 const props = defineProps({
   action: {
     type: Object,
@@ -17,7 +19,7 @@ const props = defineProps({
     default: () => ({
       route: "https://www.creative-tim.com/product/vue-material-kit",
       color: "bg-gradient-secondary",
-      label: "Portifólio",
+      label: "Produtos",
     }),
   },
   transparent: {
@@ -121,7 +123,7 @@ watch(
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        Campag Informática
+        <img :src="campagIcon" /> Campag Informática
       </RouterLink>
 
       <RouterLink
@@ -132,7 +134,7 @@ watch(
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        Campag Informática
+        <img :src="campagIcon" /> Campag Informática
       </RouterLink>
 
       <button
