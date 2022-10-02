@@ -14,8 +14,8 @@ import MaterialBadge from "@/components/MaterialBadge.vue";
 
             <h2 class="text-dark mb-0">Onde estamos?</h2>
             <p class="lead">
-              We have created multiple options for you to put together and
-              customise into pixel perfect pages.
+              Agende uma visita através do formulário e venha conhecer nossa
+              empresa.
             </p>
           </div>
         </div>

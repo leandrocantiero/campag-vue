@@ -22,7 +22,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Pagination"
-    :breadcrumb="[{ label: 'Navigation', route: '#' }, { label: 'Pagination' }]"
+    :breadcrumb="[{ label: 'Navigation', route: '/' }, { label: 'Pagination' }]"
   >
     <View
       title="Pagination Simple"

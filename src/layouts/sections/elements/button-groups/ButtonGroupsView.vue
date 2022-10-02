@@ -33,7 +33,7 @@ onMounted(() => {
   <BaseLayout
     title="Button Groups"
     :breadcrumb="[
-      { label: 'Elements', route: '#' },
+      { label: 'Elements', route: '/' },
       { label: 'Button Groups' },
     ]"
   >

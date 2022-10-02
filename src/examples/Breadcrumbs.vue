@@ -22,7 +22,7 @@ defineProps({
         :key="index"
         class="breadcrumb-item"
       >
-        <a v-if="index != routes.length - 1" :href="route">{{ label }}</a>
+        <router-link v-if="index != routes.length - 1" :to="route">{{ label }}</router-link>
         <template v-else>{{ label }}</template>
       </li>
     </ol>

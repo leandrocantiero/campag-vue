@@ -28,7 +28,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Badges"
-    :breadcrumb="[{ label: 'Elements', route: '#' }, { label: 'Badges' }]"
+    :breadcrumb="[{ label: 'Elements', route: '/' }, { label: 'Badges' }]"
   >
     <View
       title="Badges Gradients"

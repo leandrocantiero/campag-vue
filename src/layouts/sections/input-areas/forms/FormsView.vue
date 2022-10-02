@@ -22,7 +22,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Forms"
-    :breadcrumb="[{ label: 'Input Areas', route: '#' }, { label: 'Forms' }]"
+    :breadcrumb="[{ label: 'Input Areas', route: '/' }, { label: 'Forms' }]"
   >
     <View
       title="Form simple"

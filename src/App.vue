@@ -14,8 +14,26 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 import { RouterView } from "vue-router";
+import { FadeInOut } from "vue3-transitions";
 </script>
 
 <template>
-  <router-view />
+  <router-view v-slot="{ Component, route }">
+    <transition name="fade" mode="out-in">
+      <div :key="route.name">
+        <component :is="Component"></component>
+      </div>
+    </transition>
+  </router-view>
 </template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

@@ -37,7 +37,7 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
             <DefaultInfoCard
               icon="content_copy"
               title="Conversão"
-              description="Já tem um sistema implantado e precisa de uma conversão? Sem problemas! Nossa equipe converte qualquer base de dados em até 90 dias."
+              description="Já tem um sistema implantado e precisa de uma conversão? Sem problemas! Nossa equipe converte sua base de dados."
             />
 
             <DefaultInfoCard

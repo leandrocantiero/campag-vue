@@ -70,8 +70,8 @@ onUnmounted(() => {
   </div>
 
   <header class="bg-gradient-dark">
-    <Carousel :autoplay="4500">
-      <Slide v-for="(image, index) in images" :key="image">
+    <Carousel :autoplay="4500" :wrap-around="true">
+      <Slide v-for="(image, index) in images" :key="index">
         <div
           class="carousel__item page-header min-vh-75"
           :style="{
@@ -119,7 +119,7 @@ onUnmounted(() => {
     <PresentationCounter />
     <PresentationInformation />
     <PresentationExample :data="data" />
-    <PresentationTestimonials />
+    <!-- <PresentationTestimonials /> -->
 
     <div
       class="container-fluid mt-sm-5 border-radius-xl"
@@ -144,7 +144,8 @@ onUnmounted(() => {
                 </h3>
                 <p class="text-white text-md">
                   Fornecemos os melhores sistemas disponíveis no mercado. <br />
-                  Tudo para que sua empresa obtenha o melhor desempenho e e transforme isso em uma vantagem competitiva.
+                  Tudo para que sua empresa obtenha o melhor desempenho e e
+                  transforme isso em uma vantagem competitiva.
                 </p>
 
                 <RouterLink

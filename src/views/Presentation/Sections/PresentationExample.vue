@@ -1,6 +1,7 @@
 <script setup>
 import ExampleCard from "../Components/ExampleCard.vue";
 import MaterialBadge from "../../../components/MaterialBadge.vue";
+import MaterialButton from "@/components/MaterialButton.vue";
 
 defineProps({
   data: {
@@ -57,9 +58,7 @@ export default {
             >
 
             <h2 class="text-dark mb-0">Veja nosso portifólio de sistemas</h2>
-            <p class="lead">
-              Confira abaixo nossos parceiros e sistemas!
-            </p>
+            <p class="lead">Confira abaixo nossos parceiros e sistemas!</p>
           </div>
         </div>
       </div>
@@ -67,7 +66,7 @@ export default {
 
     <div class="container mt-sm-5 mt-3">
       <div
-        v-for="({ heading, description, items }, index) in data"
+        v-for="({ heading, button, description, items }, index) in data"
         :class="`row ${index != 0 && index != -1 ? 'pt-lg-6' : ''}`"
         :key="heading"
       >
@@ -80,8 +79,20 @@ export default {
             <h6 class="text-secondary font-weight-normal pe-3">
               {{ description }}
             </h6>
+
+            <a
+              v-if="button != undefined"
+              :href="button.link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MaterialButton :color="button.color">
+                {{ button.text }}
+              </MaterialButton>
+            </a>
           </div>
         </div>
+
         <div :class="`${col2 ?? 'col-lg-9'}`">
           <div :class="`row ${index != 0 ? 'mt-3' : ''}`">
             <div

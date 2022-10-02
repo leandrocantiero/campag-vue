@@ -40,7 +40,52 @@ import ContactMap from "./components/ContactMap.vue";
   </header>
 
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
-    <ContactForm />
+    <section class="pt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="row justify-content-center">
+              <div class="card blur justify-content-center shadow-lg">
+                <div
+                  class="
+                    card-header
+                    p-0
+                    position-relative
+                    mt-n4
+                    mx-3
+                    z-index-2
+                    bg-transparent
+                  "
+                >
+                  <div
+                    class="
+                      bg-gradient-primary
+                      shadow-primary
+                      border-radius-lg
+                      p-3
+                    "
+                  >
+                    <h3 class="text-white text-primary mb-0">Contate-nos</h3>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <!-- <p class="pb-3">
+                  For further questions, including partnership opportunities,
+                  please email hello@creative-tim.com or contact using our
+                  contact form.
+                </p> -->
+                  <div class="card-body p-0 my-3">
+                    <ContactForm />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <ContactMap />
   </div>
 

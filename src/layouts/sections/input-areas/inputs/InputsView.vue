@@ -38,7 +38,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Inputs"
-    :breadcrumb="[{ label: 'Input Areas', route: '#' }, { label: 'Inputs' }]"
+    :breadcrumb="[{ label: 'Input Areas', route: '/' }, { label: 'Inputs' }]"
   >
     <View title="Input dynamic" :code="inputDynamicCode" id="input-dynamic">
       <InputDynamic />

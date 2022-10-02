@@ -23,7 +23,7 @@ onMounted(() => {
   <BaseLayout
     title="Progress Bars"
     :breadcrumb="[
-      { label: 'Elements', route: '#' },
+      { label: 'Elements', route: '/' },
       { label: 'Progress Bars' },
     ]"
   >

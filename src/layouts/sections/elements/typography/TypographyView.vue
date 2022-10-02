@@ -22,7 +22,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Typography"
-    :breadcrumb="[{ label: 'Elements', route: '#' }, { label: 'Typography' }]"
+    :breadcrumb="[{ label: 'Elements', route: '/' }, { label: 'Typography' }]"
   >
     <View
       title="Typography - Font Family Roboto"

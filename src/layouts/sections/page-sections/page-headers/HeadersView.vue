@@ -19,6 +19,7 @@ onMounted(() => {
   setNavPills();
 });
 </script>
+
 <template>
   <BaseLayout
     title="Page Headers"

@@ -23,7 +23,7 @@ onMounted(() => {
   <BaseLayout
     title="Alerts"
     :breadcrumb="[
-      { label: 'Attention Catchers', route: '#' },
+      { label: 'Attention Catchers', route: '/' },
       { label: 'Alerts' },
     ]"
   >

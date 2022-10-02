@@ -24,7 +24,7 @@ onMounted(() => {
   <BaseLayout
     title="Tooltip & Popovers"
     :breadcrumb="[
-      { label: 'Attention Catchers', route: '#' },
+      { label: 'Attention Catchers', route: '/' },
       { label: 'Tooltip & Popovers' },
     ]"
   >

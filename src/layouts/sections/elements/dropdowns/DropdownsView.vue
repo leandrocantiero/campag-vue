@@ -22,7 +22,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Dropdowns"
-    :breadcrumb="[{ label: 'Elements', route: '#' }, { label: 'Dropdowns' }]"
+    :breadcrumb="[{ label: 'Elements', route: '/' }, { label: 'Dropdowns' }]"
   >
     <View
       title="Dropdown and Dropup"

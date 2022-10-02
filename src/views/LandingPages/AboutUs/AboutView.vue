@@ -95,7 +95,7 @@ onUnmounted(() => {
     <AboutInformation />
     <AboutTeam />
     <AboutFeaturing />
-    <AboutNewsletter />
+    <!-- <AboutNewsletter /> -->
   </div>
 
   <FooterDefault />

@@ -23,7 +23,7 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
             alt="logo"
           />
         </div>
-        
+
         <div class="col-lg-2 col-md-4 col-6 mb-4">
           <img
             class="w-100 opacity-7"
@@ -37,7 +37,7 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
         <div class="col-md-4 position-relative">
           <DefaultCounterCard
             color="primary"
-            title="Sistemas"
+            title="Sistemas disponíveis"
             description="Da contabilidade à administração de pessoal, temos todos os sistemas que você precisa!"
             :count="20"
             suffix="+"
@@ -48,7 +48,7 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
         <div class="col-md-4 position-relative">
           <DefaultCounterCard
             color="primary"
-            title="Clientes"
+            title="Sistemas instalados"
             description="Nossa gama de clientes inclui prefeituras, câmaras e empresas privadas"
             :count="100"
             suffix="+"

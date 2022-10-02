@@ -32,68 +32,73 @@ export default [
     heading: "Fiorilli Software",
     description:
       "Atuando desde 1974, com transparência e eficiência, a Fiorilli desenvolve soluções corporativas voltadas à Administração Pública. Tendo sempre como principal objetivo garantir a satisfação de seus clientes, a empresa produz softwares que atendem às necessidades das entidades públicas de todos os estados brasileiros. Além disso, o conhecimento dos nossos profissionais faz a diferença nos processos e garante a atualização constante dos nossos produtos.",
+    button: {
+      text: 'Baixar Catálogo',
+      link: 'https://fiorilli.com.br/material-scpi/',
+      color: 'primary'
+    },
     items: [
       {
         image: fiorilliScpi,
         title: "SCPI - Sistema de Contabilidade Pública Integrado",
-        route: "page-headers",
+        route: "product-scpi",
         pro: false
       },
       {
         image: fiorilliSip,
         title: "SIP - Sistema Integrado de Pessoal",
-        route: "page-features",
+        route: "product-sip",
         pro: false
       },
       {
         image: fiorilliSia,
         title: "SIA - Sistema Integrado de Arrecadação",
-        route: "presentation",
+        route: "product-sia",
         pro: false
       },
       {
         image: fiorilliSas,
         title: "SAS - Sistema de Assistência Social",
-        route: "presentation",
+        route: "product-sas",
         pro: false
       },
       {
         image: fiorilliSie,
         title: "SIE - Sistema Integrado de Ensino",
-        route: "presentation",
+        route: "product-sie",
         pro: false
       },
       {
         image: fiorilliSis,
         title: "SIS - Sistema Integrado de Saúde",
-        route: "presentation",
+        route: "product-sis",
         pro: false
       },
       {
         image: fiorilliSse,
         title: "SSE - Sistema de Secretaria",
-        route: "presentation",
+        route: "product-sse",
         pro: false
       },
       {
         image: fiorilliSolucoes,
         title: "Soluções Fiorilli - Sistemas para Biblioteca, Controle Interno e Ouvidoria",
-        route: "presentation",
+        route: "product-solucoes",
         pro: false
       },
     ]
   },
-  {
-    heading: "Senior Sistemas",
-    description:
-      "Presente em todo território brasileiro e na América Latina, é referência em tecnologia para gestão, a companhia tem um dos mais completos portfolios para alta performance, oferecendo soluções em Gestão Empresarial, Logística, Gestão de Pessoas, Relacionamento com Clientes, Supermercados e Gestão de Acesso e Segurança. Descubra mais sobre a história e sucessos da Senior.",
-    items: [
-      {
-        image: seniorFolha,
-        title: "Folha de Pagamento",
-        route: "presentation",
-        pro: false
-      },
-    ]
-  }
+  // {
+  //   heading: "Senior Sistemas",
+  //   description:
+  //     "Presente em todo território brasileiro e na América Latina, é referência em tecnologia para gestão, a companhia tem um dos mais completos portfolios para alta performance, oferecendo soluções em Gestão Empresarial, Logística, Gestão de Pessoas, Relacionamento com Clientes, Supermercados e Gestão de Acesso e Segurança. Descubra mais sobre a história e sucessos da Senior.",
+  //   items: [
+  //     {
+  //       image: seniorFolha,
+  //       title: "Folha de Pagamento",
+  //       route: "presentation",
+  //       pro: false
+  //     },
+  //   ]
+  // }
 ];

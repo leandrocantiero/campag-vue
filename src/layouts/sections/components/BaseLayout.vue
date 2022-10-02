@@ -16,11 +16,13 @@ defineProps({
 </script>
 <template>
   <DefaultNavbar light />
+
   <div class="container mt-5">
     <div class="row">
       <div class="col-lg-12 mx-auto">
-        <div class="mb-4 w-100 w-md-50 w-lg-25">
+        <div class="mb-4 w-150 w-md-110 w-lg-40">
           <Breadcrumbs :routes="breadcrumb" />
+
           <h3>{{ title }}</h3>
         </div>
 
@@ -28,5 +30,6 @@ defineProps({
       </div>
     </div>
   </div>
+
   <CenteredFooter />
 </template>

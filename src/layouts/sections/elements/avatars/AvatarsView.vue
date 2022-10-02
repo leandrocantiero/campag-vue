@@ -23,7 +23,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Avatars"
-    :breadcrumb="[{ label: 'Elements', route: '#' }, { label: 'Avatars' }]"
+    :breadcrumb="[{ label: 'Elements', route: '/' }, { label: 'Avatars' }]"
   >
     <View title="Avatar Group" :code="avatarGroupCode" id="avatar-group">
       <AvatarGroup />

@@ -34,7 +34,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Buttons"
-    :breadcrumb="[{ label: 'Elements', route: '#' }, { label: 'Buttons' }]"
+    :breadcrumb="[{ label: 'Elements', route: '/' }, { label: 'Buttons' }]"
   >
     <View
       title="Buttons Colors Gradient"

@@ -11,7 +11,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="primary"
-                title="Sistemas"
+                title="Sistemas disponíveis"
                 description="Da contabilidade à administração de pessoal, temos todos os sistemas que você precisa!"
                 :count="20"
                 suffix="+"
@@ -22,7 +22,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="primary"
-                title="Clientes"
+                title="Sistemas instalados"
                 description="Nossa gama de clientes inclui prefeituras, câmaras e empresas privadas"
                 :count="100"
                 suffix="+"

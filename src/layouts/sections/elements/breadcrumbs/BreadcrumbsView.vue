@@ -22,7 +22,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Breadcrumbs"
-    :breadcrumb="[{ label: 'Elements', route: '#' }, { label: 'Breadcrumbs' }]"
+    :breadcrumb="[{ label: 'Elements', route: '/' }, { label: 'Breadcrumbs' }]"
   >
     <View title="Breadcrumbs" :code="breadcrumbsCode" id="breadcrumbs">
       <div class="py-6 px-8 mt-2">

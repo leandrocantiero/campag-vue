@@ -14,7 +14,7 @@ import image from "@/assets/img/software-1.jpg";
             <DefaultInfoCard
               icon="content_copy"
               title="Conversão"
-              description="Já tem um sistema implantado e precisa de uma conversão? Sem problemas! Nossa equipe converte qualquer base de dados em até 90 dias."
+              description="Já tem um sistema implantado e precisa de uma conversão? Sem problemas! Nossa equipe converte sua base de dados."
             />
 
             <DefaultInfoCard

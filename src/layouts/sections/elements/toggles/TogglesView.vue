@@ -23,7 +23,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Toggles"
-    :breadcrumb="[{ label: 'Elements', route: '#' }, { label: 'Toggles' }]"
+    :breadcrumb="[{ label: 'Elements', route: '/' }, { label: 'Toggles' }]"
   >
     <View title="Toggle" :code="toggleCode" id="toggle">
       <Toggle />

@@ -22,7 +22,7 @@ onMounted(() => {
 <template>
   <BaseLayout
     title="Navbars"
-    :breadcrumb="[{ label: 'Navigation', route: '#' }, { label: 'Navbars' }]"
+    :breadcrumb="[{ label: 'Navigation', route: '/' }, { label: 'Navbars' }]"
   >
     <View
       title="Navbar dark"
