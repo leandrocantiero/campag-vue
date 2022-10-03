@@ -38,13 +38,15 @@ import PageFeatures from "../layouts/sections/page-sections/features/FeaturesVie
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
 
+  base: import.meta.env.BASE_URL,
+
   scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) return { selector: to.hash }
     if (savedPosition) return savedPosition
 
-    return { x: 0, y: 0 }
+    return { left: 0, top: 0 }
   },
-  
+
   routes: [
     {
       path: "/",
@@ -108,7 +110,7 @@ const router = createRouter({
       component: ProductSolucoes,
     },
 
-    
+
     {
       path: "/sections/page-sections/page-headers",
       name: "page-headers",

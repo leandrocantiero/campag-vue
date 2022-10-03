@@ -13,42 +13,67 @@ import MaterialButton from "@/components/MaterialButton.vue";
 // nav-pills
 import setNavPills from "@/assets/js/nav-pills.js";
 
-const list = [
-  {
-    icon: "fa fa-clone",
-    title: "Cadastros",
-    description:
-      "No SAS, os cadastros seguem o modelo do Cadastramento Único para Programas Sociais do Governo Federal, proporcionando aos governos municipais, estaduais e federal, o diagnóstico socioeconômico das famílias cadastradas, possibilitando a análise das suas principais necessidades.",
-  },
+const sbbList = [
   {
     icon: "fa fa-users",
-    title: "Projetos e programa sociais",
-    description:
-      "Permite gerenciar de forma dinâmica, os Projetos e Programas Sociais oferecidos pela instituição. Controla o período de vigência dos projetos, assim como o valor deste. Evita a duplicação do benefício a uma mesma pessoa, assim como também controla as peculiaridades de cada projeto, como por exemplo, o intervalo de idade permitida, exclusividade, parentesco etc... Além de controlar o histórico da pessoa, relacionando os projetos e programas sociais que a pessoa ou família participa ou já participou.",
+    title: "Permite controlar diversas unidades bibliotecárias.",
   },
   {
-    icon: "fa fa-trophy",
-    title: "Concessão e benefícios",
-    description:
-      "Permite gerenciar requerimentos e concessões de benefícios. Quando feito o requerimento, este fica em aberto até que seja feita a concessão ou seu cancelamento. A tela de concessão mostra os benefícios já recebidos pela pessoa e pela sua família, contendo a data, benefício, o valor, além dos pareceres e do profissional que fez a concessão, evitando assim a sobreposição de benefícios, e análise do histórico rápido e fácil.",
+    icon: "fa fa-book",
+    title:
+      "Cadastro de qualquer tipo de obra, publicações e exemplares com geração automática da ficha catalográfica.",
+  },
+  {
+    icon: "fa fa-print",
+    title:
+      "Impressão de etiquetas com código de barras EAN13 para controle de acervo, etiquetas de dorso.",
+  },
+  {
+    icon: "fa fa-file-text",
+    title:
+      "Controle de empréstimo e devolução de títulos a partir de alertas e multas.",
   },
   {
     icon: "fa fa-money",
-    title: "Despesas",
-    description:
-      "O controle de despesas de cada família assim como a condição financeira da mesma está integrado tanto no cadastro da família quanto às visitas domiciliares, podendo ser atualizada em qualquer um dos módulos da forma mais simples possível. A partir desses dados é elaborada a condição financeira da família.",
+    title:
+      "Controle de valores por empréstimo e controle de multa por dias de atraso.",
+  },
+];
+
+const scimList = [
+  {
+    icon: "fa fa-dashboard",
+    title:
+      "Realização de levantamentos do funcionamento dos diversos setores da administração.",
   },
   {
-    icon: "fa fa-home",
-    title: "Visitas domiciliares",
-    description:
-      "Nesse módulo, o SAS dá suporte as visitas domiciliares. Permite controle total da visita, assim como o motivo da visita, do entrevistado, desenvolvimento do caso, parecer, despesas constatadas, profissional responsável pela visita, composição familiar, parentesco e condições financeiras da família. O sistema ainda permite ao usuário agendar as visitas familiares.",
+    icon: "fa fa-money",
+    title:
+      "Levantamento de dados estatísticos da situação econômico financeira desde a arrecadação municipal até a elaboração dos balanços.",
   },
+  {
+    icon: "fa fa-print",
+    title:
+      "Avaliação e auditoria dos demonstrativos de execução contábil e balanços.",
+  },
+  {
+    icon: "fa fa-file-text",
+    title: "Avaliação dos programas de planejamento e sua execução.",
+  },
+];
+
+const sopList = [
   {
     icon: "fa fa-headphones",
-    title: "Atendimentos",
+    title: "Atendimento",
     description:
-      "Permite realizar o atendimento a pessoa, mostrando em uma única tela todos os atendimentos realizados para a família, bem como um resumo cadastral contendo dados pessoais, da família, visitas, programas sociais que participa e benefícios concedidos. A partir do atendimento é possível realizar de maneira fácil a concessão de um benefício, relacionamento a um projeto, agendamento de outro atendimento, visita ou até o encaminhamento para outro profissional e/ou unidade, sem a necessidade de ficar trocando de telas.",
+      "Esta função registra o atendimento, relacionando-o por natureza do assunto e pela área responsável. Contém, ainda os dados do atendente, a prioridade da solicitação e os dados do cidadão, caso este se identifique, caso contrário, o atendimento pode ser cadastrado como anônimo. O atendimento é encaminhado para o órgão competente, que deverá estabelecer data e providências, ou solução, sobre o encaminhamento. Ao efetuar o registro é possível encaminhar uma carta ou um e-mail referente ao atendimento para o órgão competente, e uma carta de esclarecimento ou e-mail para o cidadão. Também é possível a inclusão, encaminhamento, consulta, manutenção e providência para os registros de atendimento. O cidadão pode fazer consultas sobre a situação do seu atendimento diretamente pelo site ou aguardar encaminhamento do órgão responsável.",
+  },
+  {
+    icon: "fa fa-file-text",
+    title: "Acompanhamento Gerencial",
+    description:
+      "Esta função tem por objetivo fornecer relatórios estatísticos e gráficos que visam auxiliar o acompanhamento gerencial.",
   },
 ];
 
@@ -112,45 +137,56 @@ onMounted(() => {
       />
     </div>
 
-    <div class="row align-items-start mt-5">
-      <div class="col-md-6">
-        <h4 class="text-primary">Alertas que melhoram os resultados</h4>
-        <p>
-          O SAS foi projetado para atender as necessidades dos usuários das
-          Entidades Públicas, visando facilitar o seu dia a dia e trazer
-          melhores resultados. A partir de avisos e alertas na tela inicial, o
-          usuário consegue visualizar atendimentos e visitas agendadas,
-          encaminhamentos recebidos e pessoas que estão expirando a data de
-          participação em um projeto.
-        </p>
-      </div>
+    <hr class="horizontal dark my-5" />
 
-      <div class="col-md-6">
-        <h4 class="text-primary">Unificação das telas</h4>
-        <p>
-          É muito importante conhecer a realidade dos nossos clientes. Por esse
-          motivo disponibilizamos ambientes que permitem a melhor utilização e
-          aproveitamento dos dados e do tempo empreendido no lançamento. A
-          partir da tela de atendimentos é possível fazer concessão de um
-          benefícios, relacionamento a um projeto, agendamento de outro
-          atendimento, visita ou até o encaminhamento para outro profissional
-          e/ou unidade.
-        </p>
-      </div>
+    <div class="row align-items-center mt-5">
+      <h4 class="text-primary">
+        Algumas funcionalidades do Sistema de Biblioteca
+      </h4>
+
+      <ul class="nav mx-3 mt-4">
+        <li
+          class="nav-item my-3"
+          v-for="{ icon, title } of sbbList"
+          :key="icon"
+        >
+          <h5><i :class="icon + ' mx-3 text-primary'" />{{ title }}</h5>
+        </li>
+      </ul>
     </div>
 
     <hr class="horizontal dark my-5" />
 
     <div class="row align-items-center mt-5">
-      <h4 class="text-primary">Algumas funcionalidades do sistema</h4>
+      <h4 class="text-primary">
+        Algumas funcionalidades do Sistema de Controle Interno
+      </h4>
 
       <ul class="nav mx-3 mt-4">
         <li
-          class="nav-item my-4"
-          v-for="{ icon, title, description } of list"
+          class="nav-item my-3"
+          v-for="{ icon, title } of scimList"
           :key="icon"
         >
-          <h5><i :class="icon + ' mx-2 text-primary'" />{{ title }}</h5>
+          <h5><i :class="icon + ' mx-3 text-primary'" />{{ title }}</h5>
+        </li>
+      </ul>
+    </div>
+
+    <hr class="horizontal dark my-5" />
+
+    <div class="row align-items-center mt-5">
+      <h4 class="text-primary">
+        Algumas funcionalidades do Sistema de Ouvidoria
+      </h4>
+
+      <ul class="nav mx-3 mt-4">
+        <li
+          class="nav-item my-3"
+          v-for="{ icon, title, description } of sopList"
+          :key="icon"
+        >
+          <h5><i :class="icon + ' mx-3 text-primary'" />{{ title }}</h5>
           <p class="mx-4" v-html="description" />
         </li>
       </ul>

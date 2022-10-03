@@ -1,0 +1,19 @@
+{
+    "headers": [
+      {
+        "source": "/",
+        "has": [
+          {
+            "type": "host",
+            "value": "campaginformatica.com.br"
+          }
+        ],
+        "headers" : [
+          {
+            "key" : "X-Robots-Tag",
+            "value" : "noindex"
+          }
+        ]
+      }
+    ]
+  }
