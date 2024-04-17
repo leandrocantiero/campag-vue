@@ -3,10 +3,7 @@
 import HorizontalTeamCard from "@/examples/cards/teamCards/HorizontalTeamCard.vue";
 
 // images
-import emma from "@/assets/img/team-5.jpg";
-import william from "@/assets/img/bruce-mars.jpg";
-import ivana from "@/assets/img/ivana-squares.jpg";
-import marquez from "@/assets/img/ivana-square.jpg";
+import userIconBlue from "@/assets/img/user-icon-blue.png"
 </script>
 
 <template>
@@ -24,13 +21,13 @@ import marquez from "@/assets/img/ivana-square.jpg";
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-4"
-            :image="william"
+            :image="userIconBlue"
             :profile="{
               name: 'Claudivelto F. Campagnolo',
               link: 'javascript:;',
             }"
             :position="{
-              label: 'Atendente de folha de pagamento',
+              label: 'Atendente de Folha de Pagamento | Encarregado de Dados',
               color: 'primary',
             }"
             description="Artist is a term applied to a person who engages in an
@@ -40,10 +37,10 @@ import marquez from "@/assets/img/ivana-square.jpg";
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-lg-4 mt-5"
-            :image="william"
+            :image="userIconBlue"
             :profile="{ name: 'Cedivaldo Sgrignolli', link: 'javascript:;' }"
             :position="{
-              label: 'Sócio | Atendente de contabilidade',
+              label: 'Sócio | Atendente de Contabilidade',
               color: 'primary',
             }"
             description="Artist is a term applied to a person who engages in an
@@ -56,7 +53,7 @@ import marquez from "@/assets/img/ivana-square.jpg";
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-4 z-index-2"
-            :image="marquez"
+            :image="userIconBlue"
             :profile="{ name: 'Valter Campagnolo', link: 'javascript:;' }"
             :position="{ label: 'Sócio | CEO', color: 'primary' }"
             description="Artist is a term applied to a person who engages in an
@@ -66,10 +63,10 @@ import marquez from "@/assets/img/ivana-square.jpg";
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-lg-4 mt-5 z-index-2"
-            :image="emma"
+            :image="userIconBlue"
             :profile="{ name: 'Giovana Sgrignolli', link: 'javascript:;' }"
             :position="{
-              label: 'Atendente de contabilidade',
+              label: 'Atendente de Licitação',
               color: 'primary',
             }"
             description="Artist is a term applied to a person who engages in an
@@ -82,9 +79,9 @@ import marquez from "@/assets/img/ivana-square.jpg";
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-4 z-index-2"
-            :image="marquez"
+            :image="userIconBlue"
             :profile="{ name: 'Thales Roberto', link: 'javascript:;' }"
-            :position="{ label: 'Atendente de arrecadação', color: 'primary' }"
+            :position="{ label: 'Atendente de Arrecadação', color: 'primary' }"
             description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art."
           />
