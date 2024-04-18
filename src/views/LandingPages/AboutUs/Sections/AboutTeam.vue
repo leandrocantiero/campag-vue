@@ -30,8 +30,6 @@ import userIconBlue from "@/assets/img/user-icon-blue.png"
               label: 'Atendente de Folha de Pagamento | Encarregado de Dados',
               color: 'primary',
             }"
-            description="Artist is a term applied to a person who engages in an
-                    activity deemed to be an art."
           />
         </div>
         <div class="col-lg-6 col-12">
@@ -43,8 +41,6 @@ import userIconBlue from "@/assets/img/user-icon-blue.png"
               label: 'Sócio | Atendente de Contabilidade',
               color: 'primary',
             }"
-            description="Artist is a term applied to a person who engages in an
-                    activity deemed to be an art."
           />
         </div>
       </div>
@@ -56,8 +52,6 @@ import userIconBlue from "@/assets/img/user-icon-blue.png"
             :image="userIconBlue"
             :profile="{ name: 'Valter Campagnolo', link: 'javascript:;' }"
             :position="{ label: 'Sócio | CEO', color: 'primary' }"
-            description="Artist is a term applied to a person who engages in an
-                    activity deemed to be an art."
           />
         </div>
         <div class="col-lg-6 col-12">
@@ -69,8 +63,6 @@ import userIconBlue from "@/assets/img/user-icon-blue.png"
               label: 'Atendente de Licitação',
               color: 'primary',
             }"
-            description="Artist is a term applied to a person who engages in an
-                    activity deemed to be an art."
           />
         </div>
       </div>
@@ -82,8 +74,6 @@ import userIconBlue from "@/assets/img/user-icon-blue.png"
             :image="userIconBlue"
             :profile="{ name: 'Thales Roberto', link: 'javascript:;' }"
             :position="{ label: 'Atendente de Arrecadação', color: 'primary' }"
-            description="Artist is a term applied to a person who engages in an
-                    activity deemed to be an art."
           />
         </div>
       </div>

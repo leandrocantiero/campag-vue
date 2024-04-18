@@ -15,7 +15,7 @@ import MaterialBadge from "@/components/MaterialBadge.vue";
             <h2 class="text-dark mb-0">Onde estamos?</h2>
             <p class="lead">
               Agende uma visita através do formulário e venha conhecer nossa
-              empresa.
+              empresa, ou nos ligue através do telefone: (18) 3221-3546
             </p>
           </div>
         </div>

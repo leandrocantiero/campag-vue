@@ -15,7 +15,7 @@ import Typed from "typed.js";
 import AboutInformation from "./Sections/AboutInformation.vue";
 import AboutTeam from "./Sections/AboutTeam.vue";
 import AboutFeaturing from "./Sections/AboutFeaturing.vue";
-import AboutNewsletter from "./Sections/AboutNewsletter.vue";
+import AboutPrivacy from "./Sections/AboutPrivacy.vue";
 
 const body = document.getElementsByTagName("body")[0];
 //hooks
@@ -95,7 +95,7 @@ onUnmounted(() => {
     <AboutInformation />
     <AboutTeam />
     <AboutFeaturing />
-    <!-- <AboutNewsletter /> -->
+    <AboutPrivacy />
   </div>
 
   <FooterDefault />

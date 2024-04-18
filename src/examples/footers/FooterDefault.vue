@@ -4,10 +4,12 @@ defineProps({
   brand: {
     type: Object,
     name: String,
+    description: String,
     logo: String,
     route: "",
     default: () => ({
       name: "Campag Informática",
+      description: "(18) 3221-3546",
       logo: logoDark,
       route: "/",
     }),
@@ -66,23 +68,6 @@ defineProps({
           { name: "Produtos", href: "https://www.creative-tim.com/blog" },
         ],
       },
-      {
-        name: "legal",
-        items: [
-          {
-            name: "terms & conditions",
-            href: "https://www.creative-tim.com/terms",
-          },
-          {
-            name: "privacy policy",
-            href: "https://www.creative-tim.com/privacy",
-          },
-          {
-            name: "licenses (EULA)",
-            href: "https://www.creative-tim.com/license",
-          },
-        ],
-      },
     ],
   },
 });
@@ -97,7 +82,8 @@ defineProps({
             <a :href="brand.route">
               <img :src="brand.logo" class="mb-3 footer-logo" alt="main_logo" />
             </a>
-            <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
+            <h6 class="font-weight-bolder mb-1">{{ brand.name }}</h6>
+            <span class="mb-5">{{ brand.description }}</span>
           </div>
           <div>
             <ul class="d-flex flex-row ms-n3 nav">
